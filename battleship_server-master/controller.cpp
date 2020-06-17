@@ -183,7 +183,7 @@ void controller_t::build(const statement_item_t& item)
     std::getline(ss, model_, '-');
     std::getline(ss, slocation_, '-');
     std::getline(ss, orientation_);
-    auto dimension_ = predefined_fleet[model_t(model_[0])].second;
+    //auto dimension_ = predefined_fleet[model_t(model_[0])].second;
     auto location_ = get_coordinates(slocation_);
     auto add_status_ = player_->add_navy(location_, model_t(model_[0]),
         orientation_t(orientation_[0]), { {0, 0}, {static_cast<length_t>(columns_[0]-'A'), rows_}});

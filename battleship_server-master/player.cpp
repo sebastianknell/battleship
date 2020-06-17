@@ -50,7 +50,7 @@ dimension_t calculate_dimension(const model_t& model, const orientation_t& orien
 navy_t::navy_t(const location_t& location, const model_t& model, const orientation_t& orientation) :
     location_{ location },
     status_{ navy_status_t::healthy },
-    model_{ model },
+    //model_{ model },
     dimension_{ calculate_dimension(model, orientation) },
     layout_{ generate_layout(location_, dimension_) }
 {

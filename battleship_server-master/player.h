@@ -16,7 +16,7 @@ private:
     // attributes
     location_t location_;
     navy_status_t status_;
-    model_t model_;
+    //model_t model_;
     dimension_t dimension_;
     layout_t layout_;
     // methods
