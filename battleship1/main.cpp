@@ -4,6 +4,8 @@
 
 using namespace std;
 int main() {
+
+    srand(time(NULL));
     controller_t controller("firstPlayer","secondPlayer",'J',10);
     controller.execute();
     while(!packet_ships.empty()){

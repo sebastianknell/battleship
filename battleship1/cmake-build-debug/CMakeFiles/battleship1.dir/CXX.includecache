@@ -50,6 +50,12 @@ queue
 deque
 -
 
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.cpp
+controller_t.h
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+utils.h
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
+
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
 common_types.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
@@ -71,4 +77,12 @@ ship_t.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.h
 common_types.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
+
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
+type_traits
+-
+random
+-
+ctime
+-
 

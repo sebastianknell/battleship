@@ -7,6 +7,8 @@
 std::string global_token;
 std::queue<packet_t> packet_ships;
 
+static const int TAM = 10;
+
 controller_t::controller_t(const text_type &player_one, const text_type& player_two, const char& columns , const uuint_type& filas) {
     players_.push_back(std::make_unique<player_t>(filesystem::current_path() / player_one,"FirstPlayer"));
     players_.push_back(std::make_unique<player_t>(filesystem::current_path() / player_two,"SecondPlayer"));
@@ -72,7 +74,7 @@ void controller_t::load_tokens() {
             }
         }*/
         int i = 0;
-        while( i < 2) {
+        while( i < TAM) {
             try {
                 filesystem::directory_iterator first_{players_[0]->path_ / "out"};
                 //while (first_ != end_) {
@@ -96,7 +98,7 @@ void controller_t::load_tokens() {
 void controller_t::save_tokens() {
     auto end_ = filesystem::directory_iterator{};
     int i =0;
-    while(i < 2 ) {
+    while(i < TAM ) {
         //while (true) {
         try {
             while (!statements_.empty()) {
