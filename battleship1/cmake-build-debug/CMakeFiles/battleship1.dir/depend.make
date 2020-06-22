@@ -13,7 +13,6 @@ CMakeFiles/battleship1.dir/main.cpp.o: ../controller_t.h
 CMakeFiles/battleship1.dir/main.cpp.o: ../main.cpp
 CMakeFiles/battleship1.dir/main.cpp.o: ../player_t.h
 CMakeFiles/battleship1.dir/main.cpp.o: ../ship_t.h
-CMakeFiles/battleship1.dir/main.cpp.o: ../utils.h
 
 CMakeFiles/battleship1.dir/player_t.cpp.o: ../common_types.h
 CMakeFiles/battleship1.dir/player_t.cpp.o: ../player_t.cpp

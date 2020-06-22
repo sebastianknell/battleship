@@ -17,4 +17,19 @@ integer_t rand_int(integer_t first, integer_t last) {
     return gen(eng);
 }
 
+char rand_char_column(){
+    char columns[10] = {'A','B','C','D','E','F','G','H','I','J'};
+    return columns[rand_int(0,9)];
+}
+
+char rand_char_ship(){
+    char ships[4]={'A','B','S','T'};
+    return ships[rand_int(0,3)];
+}
+
+char rand_char_orientation(){
+    char orientations[2]={'V','H'};
+    return orientations[rand_int(0,1)];
+}
+
 #endif //BATTLESHIP1_UTILS_H

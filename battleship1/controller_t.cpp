@@ -3,8 +3,9 @@
 //
 
 #include "controller_t.h"
+#include "utils.h"
 std::string global_token;
-
+std::queue<packet_t> packet_ships;
 
 controller_t::controller_t(const text_type &player_one, const text_type& player_two, const char& columns , const uuint_type& filas) {
     players_.push_back(std::make_unique<player_t>(filesystem::current_path() / player_one,"FirstPlayer"));
@@ -30,15 +31,21 @@ void controller_t::start(const statement_item_type &item) {
 }
 
 void controller_t::build(const statement_item_type &item) {
-    auto &player = players_[item.first];
+
+    std::unique_ptr<player_t> &player = players_[item.first];
     std::string token_text = "TOKEN=";
     std::string placefleet_text = "PLACEFLEET=";
 
     std::string name = player->prefix_ + std::to_string(++player->next) + ".in";
     std::ofstream file_write(player->path_ / "in" / name);
-    //player->fleet_.emplace_back('A',std::make_pair('B',1),'H');
+    auto ship = rand_char_ship();
+    auto column = rand_char_column();
+    auto row = rand_int(1,10);
+    auto orientation = rand_char_orientation();
+    packet_ships.push(packet_t(ship,column,row,orientation));
+    player->fleet_.emplace_back(ship,std::make_pair(column,row),orientation);
     file_write << token_text<<global_token<<std::endl;
-    file_write << placefleet_text<<"A-B1-H";
+    file_write << placefleet_text<<ship<<"-"<<column<<row<<"-"<<orientation;
 }
 
 
@@ -64,27 +71,33 @@ void controller_t::load_tokens() {
                 }
             }
         }*/
-
-        try {
-            filesystem::directory_iterator first_{players_[0]->path_ / "out"};
-            //while (first_ != end_) {
+        int i = 0;
+        while( i < 2) {
+            try {
+                filesystem::directory_iterator first_{players_[0]->path_ / "out"};
+                //while (first_ != end_) {
                 if (first_ != end_) {
                     statements_.push({0u, push_statement(*first_)});
                     //filesystem::remove(*first_++, e);
                     if (e)
                         std::cerr << e.message() << "\n";
                 }
-            //}
-        }
-        catch (const std::exception& e) {
-            std::cerr << e.what();
+                //}
+            }
+
+            catch (const std::exception &e) {
+                std::cerr << e.what();
+            }
+            ++i;
         }
     //}
 }
 
 void controller_t::save_tokens() {
     auto end_ = filesystem::directory_iterator{};
-    //while (true) {
+    int i =0;
+    while(i < 2 ) {
+        //while (true) {
         try {
             while (!statements_.empty()) {
                 auto item = statements_.front();
@@ -96,9 +109,11 @@ void controller_t::save_tokens() {
                     build(item);
             }
         }
-        catch (const std::exception& e) {
+        catch (const std::exception &e) {
             std::cerr << e.what();
         }
+    ++i;
+    }
     //}
 }
 
@@ -164,4 +179,6 @@ statement_t controller_t::push_statement(const filesystem::path &entry) {
     file_read.close();
     return statement;
 }
+
+
 

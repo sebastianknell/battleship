@@ -55,8 +55,6 @@ common_types.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
 player_t.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/player_t.h
-utils.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
 
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/main.cpp
 iostream
@@ -73,10 +71,4 @@ ship_t.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.h
 common_types.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
-
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
-type_traits
--
-random
--
 

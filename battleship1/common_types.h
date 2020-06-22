@@ -46,6 +46,7 @@ public:
     text_type message;
 };
 
+
 /*
 text_type HANDSHAKE_TEXT = "HANDSHAKE=";
 text_type TOKEN_TEXT = "TOKEN=";

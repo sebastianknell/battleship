@@ -6,12 +6,12 @@
 #define BATTLESHIP1_CONTROLLER_T_H
 #include "common_types.h"
 #include "player_t.h"
-#include "utils.h"
 
 using players_type = std::vector<std::unique_ptr<player_t>>;
+class packet_t;
 
 extern std::string global_token;
-
+extern std::queue<packet_t> packet_ships;
 
 
 class controller_t {
@@ -33,5 +33,20 @@ public:
 
 };
 
+
+
+class packet_t{
+public:
+    char ship_type_;
+    char orientation_;
+    uuint_type row_;
+    char column_;
+    packet_t(const char &ship_type,const char &column ,const uuint_type &row,const char &orientation){
+        ship_type_ = ship_type;
+        orientation_ = orientation;
+        row_ = row;
+        column_ = column;
+    }
+};
 
 #endif //BATTLESHIP1_CONTROLLER_T_H
