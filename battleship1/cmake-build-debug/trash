@@ -1,0 +1,46 @@
+std::ifstream file_read("/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/first/out/FirstPlayer1.out");
+    if(file_read.is_open()){
+        std::string line;
+        std::string line_status,status;
+        std::string line_token,token;
+        std::string line_message,message;
+
+
+        std::getline(file_read,line);
+
+        statement_t statement;
+        if(line == "HANDSHAKE"){
+            std::getline(file_read,line_status);
+            std::getline(file_read,line_token);
+
+            status = line_status.substr(line_status.find('=')+1);
+            token = line_token.substr(line_token.find('=')+1);
+            if(status == "ACCEPTED") {
+                statement.token_ = token;
+                statement.action_ = "build";
+            }
+            if(status == "REJECTED"){
+                statement.action_ = "start";
+            }
+
+        }else if (line == "PLACEFLEET"){
+            std::getline(file_read,line_status);
+            std::getline(file_read,line_message);
+            status = line_status.substr(line_status.find('=')+1);
+            message = line_message.substr(line_message.find('=')+1);
+            if(status == "ACCEPTED"){
+                statement.message = message;
+                if(message == "FULL"){
+                    statement.action_ = "attack";
+                }else{
+                    statement.action_ = "build";
+                }
+            }
+            else if(status == "REJECTED"){
+                statement.action_ = "build";
+            }
+        }
+    }
+    else{
+        cout<<"no se pudo abrir el archivo";
+    }

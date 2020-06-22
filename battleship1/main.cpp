@@ -1,8 +1,13 @@
-//
-// Created by Sebastian Knell on 6/17/20.
-//
-
+#include <iostream>
+#include "controller_t.h"
+using namespace std;
 int main() {
+    controller_t controller("firstPlayer","secondPlayer",'J',10);
+    controller.execute();
+
+
+
+
     return 0;
 }
 
