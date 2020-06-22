@@ -4,10 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.cpp" "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles/battleship1.dir/casilla_t.cpp.o"
   "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.cpp" "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles/battleship1.dir/controller_t.cpp.o"
   "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/main.cpp" "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles/battleship1.dir/main.cpp.o"
   "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/player_t.cpp" "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles/battleship1.dir/player_t.cpp.o"
   "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.cpp" "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles/battleship1.dir/ship_t.cpp.o"
+  "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.cpp" "/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles/battleship1.dir/tablero_t.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

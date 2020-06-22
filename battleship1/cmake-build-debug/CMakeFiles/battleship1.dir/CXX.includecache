@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.h
+
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
 map
 -
@@ -50,12 +52,6 @@ queue
 deque
 -
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.cpp
-controller_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
-utils.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
-
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
 common_types.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
@@ -67,6 +63,8 @@ iostream
 -
 controller_t.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+tablero_t.h
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
 
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/player_t.h
 common_types.h
@@ -78,11 +76,9 @@ ship_t.h
 common_types.h
 /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
-type_traits
--
-random
--
-ctime
--
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
+controller_t.h
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+casilla_t.h
+/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.h
 

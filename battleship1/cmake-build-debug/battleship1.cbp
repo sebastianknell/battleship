@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.cpp">
+			<Option target="battleship1"/>
+		</Unit>
+		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.h">
+			<Option target="battleship1"/>
+		</Unit>
 		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h">
 			<Option target="battleship1"/>
 		</Unit>
@@ -102,6 +108,12 @@
 			<Option target="battleship1"/>
 		</Unit>
 		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.h">
+			<Option target="battleship1"/>
+		</Unit>
+		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.cpp">
+			<Option target="battleship1"/>
+		</Unit>
+		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h">
 			<Option target="battleship1"/>
 		</Unit>
 		<Unit filename="/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h">

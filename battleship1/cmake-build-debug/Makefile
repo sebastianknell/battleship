@@ -123,6 +123,33 @@ battleship1/fast:
 	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/build
 .PHONY : battleship1/fast
 
+casilla_t.o: casilla_t.cpp.o
+
+.PHONY : casilla_t.o
+
+# target to build an object file
+casilla_t.cpp.o:
+	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/casilla_t.cpp.o
+.PHONY : casilla_t.cpp.o
+
+casilla_t.i: casilla_t.cpp.i
+
+.PHONY : casilla_t.i
+
+# target to preprocess a source file
+casilla_t.cpp.i:
+	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/casilla_t.cpp.i
+.PHONY : casilla_t.cpp.i
+
+casilla_t.s: casilla_t.cpp.s
+
+.PHONY : casilla_t.s
+
+# target to generate assembly for a file
+casilla_t.cpp.s:
+	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/casilla_t.cpp.s
+.PHONY : casilla_t.cpp.s
+
 controller_t.o: controller_t.cpp.o
 
 .PHONY : controller_t.o
@@ -231,6 +258,33 @@ ship_t.cpp.s:
 	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/ship_t.cpp.s
 .PHONY : ship_t.cpp.s
 
+tablero_t.o: tablero_t.cpp.o
+
+.PHONY : tablero_t.o
+
+# target to build an object file
+tablero_t.cpp.o:
+	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/tablero_t.cpp.o
+.PHONY : tablero_t.cpp.o
+
+tablero_t.i: tablero_t.cpp.i
+
+.PHONY : tablero_t.i
+
+# target to preprocess a source file
+tablero_t.cpp.i:
+	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/tablero_t.cpp.i
+.PHONY : tablero_t.cpp.i
+
+tablero_t.s: tablero_t.cpp.s
+
+.PHONY : tablero_t.s
+
+# target to generate assembly for a file
+tablero_t.cpp.s:
+	$(MAKE) -f CMakeFiles/battleship1.dir/build.make CMakeFiles/battleship1.dir/tablero_t.cpp.s
+.PHONY : tablero_t.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... battleship1"
+	@echo "... casilla_t.o"
+	@echo "... casilla_t.i"
+	@echo "... casilla_t.s"
 	@echo "... controller_t.o"
 	@echo "... controller_t.i"
 	@echo "... controller_t.s"
@@ -252,6 +309,9 @@ help:
 	@echo "... ship_t.o"
 	@echo "... ship_t.i"
 	@echo "... ship_t.s"
+	@echo "... tablero_t.o"
+	@echo "... tablero_t.i"
+	@echo "... tablero_t.s"
 .PHONY : help
 
 

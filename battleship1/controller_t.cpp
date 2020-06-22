@@ -7,12 +7,15 @@
 std::string global_token;
 std::queue<packet_t> packet_ships;
 
-static const int TAM = 10;
 
-controller_t::controller_t(const text_type &player_one, const text_type& player_two, const char& columns , const uuint_type& filas) {
+uuint_type position_g = 0;
+
+static int TAM = 0;
+controller_t::controller_t(const text_type &player_one, const text_type& player_two, const char& columns , const uuint_type& filas){
     players_.push_back(std::make_unique<player_t>(filesystem::current_path() / player_one,"FirstPlayer"));
     players_.push_back(std::make_unique<player_t>(filesystem::current_path() / player_two,"SecondPlayer"));
 
+    TAM = filas;
     for(const auto& player:players_) {
         if(!filesystem::exists(player->path_ /"in")) {
             filesystem::create_directories(player->path_ / "in");
@@ -22,6 +25,7 @@ controller_t::controller_t(const text_type &player_one, const text_type& player_
         }
     }
 }
+
 
 void controller_t::start(const statement_item_type &item) {
     //Accediendo al jugador
@@ -40,10 +44,12 @@ void controller_t::build(const statement_item_type &item) {
 
     std::string name = player->prefix_ + std::to_string(++player->next) + ".in";
     std::ofstream file_write(player->path_ / "in" / name);
-    auto ship = rand_char_ship();
+    position_g = rand_char_ship();
+    auto ship = ships[position_g];
     auto column = rand_char_column();
-    auto row = rand_int(1,10);
+    auto row = rand_int(1,TAM);
     auto orientation = rand_char_orientation();
+
     packet_ships.push(packet_t(ship,column,row,orientation));
     player->fleet_.emplace_back(ship,std::make_pair(column,row),orientation);
     file_write << token_text<<global_token<<std::endl;
@@ -170,11 +176,16 @@ statement_t controller_t::push_statement(const filesystem::path &entry) {
             statement.message = message;
             if(message == "FULL"){
                 statement.action_ = "attack";
+            }
+            else if(message == "CONTINUE"){
+                statement.action_ = "build";
+                ships.erase(ships.begin() + position_g );
             }else{
                 statement.action_ = "build";
             }
         }
         else if(status == "REJECTED"){
+
             statement.action_ = "build";
         }
     }

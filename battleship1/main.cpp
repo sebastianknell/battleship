@@ -1,10 +1,10 @@
 #include <iostream>
 #include "controller_t.h"
-
+#include "tablero_t.h"
 
 using namespace std;
 int main() {
-
+    /*
     srand(time(NULL));
     controller_t controller("firstPlayer","secondPlayer",'J',10);
     controller.execute();
@@ -12,8 +12,10 @@ int main() {
         auto item = packet_ships.front();
         cout<<item.ship_type_<<"-"<<item.column_<<item.row_<<"-"<<item.orientation_<<std::endl;
         packet_ships.pop();
-    }
+    }*/
 
+    tablero_t tablero(0);
+    tablero.print();
 
 
     return 0;

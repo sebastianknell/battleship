@@ -109,12 +109,40 @@ CMakeFiles/battleship1.dir/ship_t.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/battleship1.dir/ship_t.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.cpp -o CMakeFiles/battleship1.dir/ship_t.cpp.s
 
+CMakeFiles/battleship1.dir/tablero_t.cpp.o: CMakeFiles/battleship1.dir/flags.make
+CMakeFiles/battleship1.dir/tablero_t.cpp.o: ../tablero_t.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/battleship1.dir/tablero_t.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/battleship1.dir/tablero_t.cpp.o -c /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.cpp
+
+CMakeFiles/battleship1.dir/tablero_t.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/battleship1.dir/tablero_t.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.cpp > CMakeFiles/battleship1.dir/tablero_t.cpp.i
+
+CMakeFiles/battleship1.dir/tablero_t.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/battleship1.dir/tablero_t.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.cpp -o CMakeFiles/battleship1.dir/tablero_t.cpp.s
+
+CMakeFiles/battleship1.dir/casilla_t.cpp.o: CMakeFiles/battleship1.dir/flags.make
+CMakeFiles/battleship1.dir/casilla_t.cpp.o: ../casilla_t.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/battleship1.dir/casilla_t.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/battleship1.dir/casilla_t.cpp.o -c /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.cpp
+
+CMakeFiles/battleship1.dir/casilla_t.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/battleship1.dir/casilla_t.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.cpp > CMakeFiles/battleship1.dir/casilla_t.cpp.i
+
+CMakeFiles/battleship1.dir/casilla_t.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/battleship1.dir/casilla_t.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.cpp -o CMakeFiles/battleship1.dir/casilla_t.cpp.s
+
 # Object files for target battleship1
 battleship1_OBJECTS = \
 "CMakeFiles/battleship1.dir/main.cpp.o" \
 "CMakeFiles/battleship1.dir/controller_t.cpp.o" \
 "CMakeFiles/battleship1.dir/player_t.cpp.o" \
-"CMakeFiles/battleship1.dir/ship_t.cpp.o"
+"CMakeFiles/battleship1.dir/ship_t.cpp.o" \
+"CMakeFiles/battleship1.dir/tablero_t.cpp.o" \
+"CMakeFiles/battleship1.dir/casilla_t.cpp.o"
 
 # External object files for target battleship1
 battleship1_EXTERNAL_OBJECTS =
@@ -123,9 +151,11 @@ battleship1: CMakeFiles/battleship1.dir/main.cpp.o
 battleship1: CMakeFiles/battleship1.dir/controller_t.cpp.o
 battleship1: CMakeFiles/battleship1.dir/player_t.cpp.o
 battleship1: CMakeFiles/battleship1.dir/ship_t.cpp.o
+battleship1: CMakeFiles/battleship1.dir/tablero_t.cpp.o
+battleship1: CMakeFiles/battleship1.dir/casilla_t.cpp.o
 battleship1: CMakeFiles/battleship1.dir/build.make
 battleship1: CMakeFiles/battleship1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable battleship1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable battleship1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/battleship1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

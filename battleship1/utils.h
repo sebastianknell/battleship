@@ -11,9 +11,6 @@
 #include <ctime>
 
 
-std::vector<char> ships = {'A','B','B','S','S','S','T','T','T','T'};
-
-
 template <typename integer_t,typename = std::enable_if_t<std::is_integral<integer_t>::value >>
 integer_t rand_int(integer_t first, integer_t last) {
     std::random_device dev;
@@ -31,8 +28,8 @@ char rand_char_column(){
 char rand_char_ship(){
     auto position =  rand()%ships.size();
     auto ship = ships[position];
-    ships.erase(ships.begin() + position);
-    return ship;
+    //ships.erase(ships.begin() + position);
+    return position;
 }
 
 char rand_char_orientation(){
