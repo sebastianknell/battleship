@@ -14,7 +14,7 @@ struct casilla_t {
     t_bool damaged;
     t_bool busy;
     t_ship ship;
-    int value;
+    char value;
 
     casilla_t();
     casilla_t(int i);

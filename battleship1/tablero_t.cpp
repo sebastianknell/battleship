@@ -12,7 +12,7 @@ tablero_t::tablero_t(int i):casilla_t(i) {
             table_[i][j].damaged = t_bool::FALSE;
             table_[i][j].failed = t_bool::FALSE;
             table_[i][j].ship = t_ship::VACIO;
-            table_[i][j].value = 0;
+            table_[i][j].value = '0';
         }
     }
 }
@@ -29,7 +29,7 @@ void tablero_t::add_ship() {
                             if(i >= item.row_-1 && i <=  item.row_+3-1 && table_[i][j].busy == t_bool::FALSE && j == (item.column_)-64-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::A;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'A';
                             }
                         }
                     }
@@ -38,7 +38,7 @@ void tablero_t::add_ship() {
                             if( j >= (item.column_)-64-1 && j <= (item.column_-64+3)-1 && table_[i][j].busy == t_bool::FALSE && i == item.row_-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::A;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'A';
                             }
                         }
                     }
@@ -49,7 +49,7 @@ void tablero_t::add_ship() {
                             if(i >= item.row_-1 && i <=  item.row_+2-1 && table_[i][j].busy == t_bool::FALSE && j == (item.column_)-64-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::B;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'B';
                             }
                         }
                     }
@@ -58,7 +58,7 @@ void tablero_t::add_ship() {
                             if( j >= (item.column_)-64-1 && j <= (item.column_-64+2)-1 && table_[i][j].busy == t_bool::FALSE && i == item.row_-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::B;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'B';
                             }
                         }
                     }
@@ -70,7 +70,7 @@ void tablero_t::add_ship() {
                             if(i >= item.row_-1 && i <=  item.row_+1-1 && table_[i][j].busy == t_bool::FALSE && j == (item.column_)-64-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::S;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'S';
                             }
                         }
                     }
@@ -79,7 +79,7 @@ void tablero_t::add_ship() {
                             if( j >= (item.column_)-64-1 && j <= (item.column_-64+1)-1 && table_[i][j].busy == t_bool::FALSE && i == item.row_-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::S;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'S';
                             }
                         }
                     }
@@ -90,7 +90,7 @@ void tablero_t::add_ship() {
                             if(i >= item.row_-1 && i <=  item.row_-1 && table_[i][j].busy == t_bool::FALSE && j == (item.column_)-64-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::T;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'T';
                             }
                         }
                     }
@@ -99,7 +99,7 @@ void tablero_t::add_ship() {
                             if( j >= (item.column_)-64-1 && j <= (item.column_-64)-1 && table_[i][j].busy == t_bool::FALSE && i == item.row_-1 ) {
                                 table_[i][j].busy = t_bool::TRUE;
                                 table_[i][j].ship = t_ship::T;
-                                table_[i][j].value = 1;
+                                table_[i][j].value = 'T';
                             }
                         }
                     }
@@ -126,8 +126,8 @@ uuint_type convert_char_to_uuint(const char &e){
 void tablero_t::print() {
     for (int i = 0; i < 10; ++i) {
         for (int j = 0; j < 10 ; ++j) {
-            std::cout<<table_[i][j].value;
+            std::cout << table_[i][j].value << " ";
         }
-        std::cout<<std::endl;
+        std::cout << std::endl;
     }
 }
