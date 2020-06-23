@@ -13,7 +13,7 @@ class packet_t;
 extern std::string global_token;
 extern std::queue<packet_t> packet_ships;
 
-std::vector<char> ships = {'A','B','B','S','S','S','T','T','T','T'};
+extern std::vector<char>ships;
 
 class controller_t {
 private:

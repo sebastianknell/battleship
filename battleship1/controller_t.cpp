@@ -6,7 +6,7 @@
 #include "utils.h"
 std::string global_token;
 std::queue<packet_t> packet_ships;
-
+std::vector<char>ships = {'A'};
 
 uuint_type position_g = 0;
 
