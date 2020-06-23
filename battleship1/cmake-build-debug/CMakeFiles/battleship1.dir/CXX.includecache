@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/casilla_t.cpp
+casilla_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/casilla_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/casilla_t.h
+
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/common_types.h
 map
 -
 vector
@@ -52,51 +56,59 @@ queue
 deque
 -
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.cpp
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/controller_t.cpp
 controller_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/controller_t.h
 utils.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/utils.h
 tablero_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/tablero_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/controller_t.h
 common_types.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/common_types.h
 player_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/player_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/player_t.h
 tablero_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/tablero_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/main.cpp
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/main.cpp
 iostream
 -
 controller_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/controller_t.h
 tablero_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/tablero_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/player_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/player_t.cpp
+player_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/player_t.h
+
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/player_t.h
 common_types.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/common_types.h
 ship_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/ship_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/ship_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/ship_t.cpp
+ship_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/ship_t.h
+
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/ship_t.h
 common_types.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/common_types.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/common_types.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.cpp
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/tablero_t.cpp
 tablero_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/tablero_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/tablero_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/tablero_t.h
 controller_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/controller_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/controller_t.h
 casilla_t.h
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/casilla_t.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/casilla_t.h
 
-/Users/Fabrizio/CLionProjects/Poo2/battleship/battleship1/utils.h
+/Users/Fabrizio/CLionProjects/Poo2/PROYECTO/battleship/battleship1/utils.h
 type_traits
 -
 random

@@ -18,6 +18,7 @@ int main() {
     tablero_t tablero(0);
     tablero.add_ship();
     tablero.print();
+    //collisions
 
     return 0;
 }
