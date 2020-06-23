@@ -32,13 +32,6 @@ void tablero_t::add_ship() {
                                 table_[i][j].value = 1;
                             }
                         }
-                        else if(item.row_+3 > 10){
-                            if(i <= item.row_-3-1 && i >= item.row_-1 && table_[i][j].busy == t_bool::FALSE && j == (item.column_)-64-1 ){
-                                table_[i][j].busy = t_bool::TRUE;
-                                table_[i][j].ship = t_ship::A;
-                                table_[i][j].value = 1;
-                            }
-                        }
                     }
                     else if (item.orientation_ == 'H') {
                         if((item.column_+3)-64 < 10){
