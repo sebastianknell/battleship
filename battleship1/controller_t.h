@@ -6,6 +6,7 @@
 #define BATTLESHIP1_CONTROLLER_T_H
 #include "common_types.h"
 #include "player_t.h"
+#include "tablero_t.h"
 
 using players_type = std::vector<std::unique_ptr<player_t>>;
 class packet_t;

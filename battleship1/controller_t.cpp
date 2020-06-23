@@ -4,10 +4,10 @@
 
 #include "controller_t.h"
 #include "utils.h"
+#include "tablero_t.h"
 std::string global_token;
 std::queue<packet_t> packet_ships;
-std::vector<char>ships = {'A'};
-
+std::vector<char>ships = {'A','B','B','S','S','S','T','T','T','T'};
 uuint_type position_g = 0;
 
 static int TAM = 0;
@@ -47,7 +47,11 @@ void controller_t::build(const statement_item_type &item) {
     position_g = rand_char_ship();
     auto ship = ships[position_g];
     auto column = rand_char_column();
-    auto row = rand_int(1,TAM);
+    auto row = rand_int(1, TAM);
+    /*while(tablero.getTable()[row][column].busy == t_bool::TRUE) {
+        column = rand_char_column();
+        row = rand_int(1, TAM);
+    }*/
     auto orientation = rand_char_orientation();
 
     packet_ships.push(packet_t(ship,column,row,orientation));

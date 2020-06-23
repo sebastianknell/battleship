@@ -4,11 +4,13 @@
 CMakeFiles/battleship1.dir/casilla_t.cpp.o: ../casilla_t.cpp
 CMakeFiles/battleship1.dir/casilla_t.cpp.o: ../casilla_t.h
 
+CMakeFiles/battleship1.dir/controller_t.cpp.o: ../casilla_t.h
 CMakeFiles/battleship1.dir/controller_t.cpp.o: ../common_types.h
 CMakeFiles/battleship1.dir/controller_t.cpp.o: ../controller_t.cpp
 CMakeFiles/battleship1.dir/controller_t.cpp.o: ../controller_t.h
 CMakeFiles/battleship1.dir/controller_t.cpp.o: ../player_t.h
 CMakeFiles/battleship1.dir/controller_t.cpp.o: ../ship_t.h
+CMakeFiles/battleship1.dir/controller_t.cpp.o: ../tablero_t.h
 CMakeFiles/battleship1.dir/controller_t.cpp.o: ../utils.h
 
 CMakeFiles/battleship1.dir/main.cpp.o: ../casilla_t.h

@@ -9,13 +9,19 @@
 
 using table_t = std::vector<std::vector<casilla_t>>;
 
+
 class tablero_t: public casilla_t {
     table_t table_;
 public:
     tablero_t(int);
     void add_ship();
     void print();
+    table_t getTable(){
+        return table_;
+    }
 };
+
+//tablero_t tablero(0);
 
 
 #endif //BATTLESHIP1_TABLERO_T_H
