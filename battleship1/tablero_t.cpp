@@ -2,6 +2,7 @@
 // Created by Fabrizio on 6/22/20.
 //
 
+#include "rlutil.h"
 #include "tablero_t.h"
 
 tablero_t::tablero_t(int i):casilla_t(i) {
@@ -123,9 +124,41 @@ uuint_type convert_char_to_uuint(const char &e){
     }
 }*/
 
-void tablero_t::print() {
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10 ; ++j) {
+void tablero_t::print() 
+{
+    rlutil::setColor(7);
+    std::cout << "   A B C D E F G H I J" << std::endl;
+    for (int i = 0; i < 10; ++i) 
+    {
+        rlutil::setColor(7);
+        std::cout << i+1 << " ";
+        if  (i < 9)
+        {
+            std::cout << " ";
+        }
+        
+        for (int j = 0; j < 10 ; ++j) 
+        {
+            rlutil::setColor(15);
+            if (table_[i][j].value == 'A')
+            {
+                rlutil::setColor(10);
+            }
+            
+            else if (table_[i][j].value == 'B')
+            {
+                rlutil::setColor(11);
+            }
+            
+            else if (table_[i][j].value == 'S')
+            {
+                rlutil::setColor(14);
+            }      
+            
+            else if (table_[i][j].value == 'T')
+            {
+                rlutil::setColor(13);
+            }            
             std::cout << table_[i][j].value << " ";
         }
         std::cout << std::endl;
